@@ -1,0 +1,221 @@
+body{
+    background-color: #F7F9FC;
+}
+
+.font{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+.nav-link {
+    color: #000 !important;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+
+
+.navbar-brand {
+    padding: 0;
+    font-size: 30px;    
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #121212;
+    cursor: pointer;
+}
+
+/***************************************************************************************
+                                     INTRODUÇÃO
+****************************************************************************************/
+
+#introducao {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#introducao img {
+    clip-path: polygon(18% 14%, 100% 0%, 90% 80%, 0% 100%);
+    width: 30%;            
+}
+
+#introducao h1 {
+    font-size: 64px;
+    cursor: default;
+    margin: auto;
+}
+
+#introducao #shape {
+    width: 150px;
+    border-radius: 5px;
+    background-color: #3E4CA5;
+    border: 5px solid #3E4CA5;
+    margin: auto;
+}
+
+/***************************************************************************************
+                                     FRASE
+****************************************************************************************/
+
+#frase {
+    background-color: #1C1B1B;
+    cursor: default;    
+}
+
+#frase h1 {
+    color: #262F6A;
+    font-weight: bold;
+}
+
+#frase span {
+    color: #fff;
+}
+
+/***************************************************************************************
+                                     HABILIDADES
+****************************************************************************************/
+
+#habilidades h1 {
+    font-weight: bold;
+    font-size: 144px;
+    color: #000;
+    opacity: 0.2;
+    cursor: default;
+}
+
+#habilidades {
+    display: flex;
+    justify-content: space-between;    
+}
+
+#habilidades ul{    
+    cursor: default;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#habilidades li {    
+    flex-basis: 150px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#habilidades svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    fill: #3E4CA5;
+}
+
+/***************************************************************************************
+                                    FORMAÇÃO
+***************************************************************************************/
+#formacao {
+    background-color: #262F6A;
+    cursor: default;
+}
+
+#formacao h1 {
+    color: #1E2655;
+    font-size: 64px;
+    font-weight: 600;    
+}
+
+#formacao #box {
+    border-radius: 4px;
+    background-color: #1C234D;
+    border: 1px solid #3E4CA5;
+    color: #fff;    
+}
+
+/***************************************************************************************
+                                    EXPERIÊNCIA
+***************************************************************************************/
+#experiencia {
+    cursor: default;
+}
+
+#experiencia h2 {    
+    font-size: 48px;
+    font-weight: bold;
+    color: #C6C7CA;
+}
+
+#experiencia .ano {
+    font-weight: 600;
+    color: #010917;
+    opacity: 0.9;
+}
+
+#experiencia p {    
+    color: #000;
+    font-size: 24px;
+}
+
+#experiencia hr {
+    width: 80%;
+}
+
+/***************************************************************************************
+                                    CONTATO
+***************************************************************************************/
+
+#contato {
+    background-color: #000;
+    cursor: default;
+}
+
+#contato ul {
+    display: flex;    
+    justify-content: center;
+    list-style-type: none;    
+    flex-wrap: wrap;
+}
+
+#contato #email {
+    flex:1;
+    display: flex;
+    justify-content: center;    
+}
+
+#contato span {
+    color: #fff;
+    font-weight: 200;
+}
+
+#contato #social svg:hover {
+    cursor: pointer;    
+    fill: #3E4CA5;
+}
+
+/***************************************************************************************
+                                    RESPONSIVO
+***************************************************************************************/
+@media (max-width: 1024px)
+{
+    #habilidades {
+        flex-wrap: wrap;
+    }
+
+    #introducao h1 {
+        font-size: 42px;
+        cursor: default;
+    }
+    #habilidades h1 {        
+        font-size: 64px;        
+    }
+}
+  
+  
+
