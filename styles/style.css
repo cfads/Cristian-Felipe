@@ -1,3 +1,7 @@
+/***************************************************************************************
+                                     GERAL
+****************************************************************************************/
+
 body{
     background-color: #F7F9FC;
 }
@@ -5,6 +9,10 @@ body{
 .font{
     font-family: 'Fira Sans', sans-serif;
 }
+
+/***************************************************************************************
+                                     NAVEGAÇÃO
+****************************************************************************************/
 
 .navbar-nav .nav-link {
     padding-top: 0;
@@ -18,8 +26,6 @@ body{
     margin: 0 20px;
     font-size: 24px;
 }
-
-
 
 .navbar-brand {
     padding: 0;
@@ -105,11 +111,11 @@ body{
 }
 
 #habilidades li {    
-    flex-basis: 150px;    
+    flex-basis: 150px;  
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 #habilidades svg:hover {
@@ -137,6 +143,11 @@ body{
     background-color: #1C234D;
     border: 1px solid #3E4CA5;
     color: #fff;    
+}
+
+#formacao #box div {
+    display: flex;
+    justify-content: space-between;
 }
 
 /***************************************************************************************
@@ -202,18 +213,83 @@ body{
 /***************************************************************************************
                                     RESPONSIVO
 ***************************************************************************************/
-@media (max-width: 1024px)
-{
+
+@media only screen and (min-width: 300px) and (max-width: 420px){
+
+    /*  ================   INTRODUÇÃO ================   */
+    
+    #introducao img {
+        width: 60%;       
+    }
+
+    #introducao h1 {
+        font-size: 42px;
+    }
+
+    /*  ================   FRASE ================   */
+
+    #frase h1,
+    #frase h1 span{
+        font-size: 28px;
+    }
+
+    /*  ================   HABILIDADES ================   */
+    
     #habilidades {
         flex-wrap: wrap;
+        justify-content: center;
     }
+
+    #habilidades h1 {        
+        font-size: 48px;  
+        margin: 0 auto !important;      
+    }
+
+    #habilidades br {
+        display: none;
+    }
+
+    #habilidades li {        
+        flex-basis: 90px;
+    }
+
+    /*  ================   FORMAÇÃO ================   */
+
+    #formacao h1 {
+        font-size: 48px;
+    }
+
+    #formacao h2 {
+        font-size: 1.4em;
+    }
+
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px){
 
     #introducao h1 {
         font-size: 42px;
         cursor: default;
     }
+
+    /*  ================   HABILIDADES ================   */
+    
+    #habilidades {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     #habilidades h1 {        
-        font-size: 64px;        
+        font-size: 64px;                
+    }
+
+    #habilidades br {
+        display: none;
+    }
+
+    #habilidades li {
+        flex-basis: 120px;
     }
 }
   
