@@ -77,7 +77,8 @@ body{
 }
 
 #frase h1 {
-    color: #262F6A;
+    /* color: #262F6A;*/
+    color: #313d86;
     font-weight: bold;
 }
 
@@ -198,11 +199,19 @@ body{
     align-items: flex-start;
 }
 
+#contato a svg {
+    fill: #fff;
+}
+
+#contato a svg:hover {
+    fill: #3E4CA5 !important;
+}
+
 /***************************************************************************************
                                     RESPONSIVO
 ***************************************************************************************/
 
-@media only screen and (min-width: 300px) and (max-width: 420px){
+@media only screen and (min-width: 300px) and (max-width: 760px){
 
     /*  ================   INTRODUÇÃO ================   */
     
@@ -255,7 +264,7 @@ body{
 
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1024px){
+@media only screen and (min-width: 760px) and (max-width: 1223px){
 
     #introducao h1 {
         font-size: 42px;
@@ -279,6 +288,20 @@ body{
 
     #habilidades li {
         flex-basis: 120px;
+    }
+}
+
+@media only screen and (min-width: 1374px){
+    #habilidades li {
+        flex-basis: 150px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1600px){
+    #habilidades li {
+        flex-basis: 250px;
     }
 }
   
