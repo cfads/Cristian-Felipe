@@ -46,15 +46,17 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 #introducao img {
     clip-path: polygon(18% 14%, 100% 0%, 90% 80%, 0% 100%);
-    width: 30%;           
+    max-height: 500px;
 }
 
 #introducao h1 {
-    font-size: 64px;
+    font-size: clamp(2.5rem, 10vw, 5rem); 
+    /*font-size: 64px;*/
     cursor: default;
     margin: auto;
 }
@@ -199,6 +201,11 @@ body{
     align-items: flex-start;
 }
 
+#contato a {
+    text-decoration: none;
+    color: #3E4CA5;
+}
+
 #contato a svg {
     fill: #fff;
 }
@@ -207,21 +214,28 @@ body{
     fill: #3E4CA5 !important;
 }
 
+
+
 /***************************************************************************************
                                     RESPONSIVO
 ***************************************************************************************/
 
-@media only screen and (min-width: 300px) and (max-width: 760px){
+@media only screen and (min-width: 280px) and (max-width: 300px){
+    .navbar-brand {
+        font-size: 24px;    
+    }    
+}
 
+@media only screen and (min-width: 280px) and (max-width: 760px){
     /*  ================   INTRODUÇÃO ================   */
     
     #introducao img {
         width: 70%;       
     }
-
+    /*
     #introducao h1 {
         font-size: 42px;
-    }
+    }*/
 
     /*  ================   FRASE ================   */
 
@@ -266,9 +280,17 @@ body{
 
 @media only screen and (min-width: 760px) and (max-width: 1223px){
 
+    #introducao img {
+        width: 40%;       
+    }
+
     #introducao h1 {
-        font-size: 42px;
-        cursor: default;
+        font-size: 48px;
+    }
+
+    #introducao div {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     /*  ================   HABILIDADES ================   */
@@ -290,6 +312,7 @@ body{
         flex-basis: 120px;
     }
 }
+
 
 @media only screen and (min-width: 1374px){
     #habilidades li {
